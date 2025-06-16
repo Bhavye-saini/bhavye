@@ -1,224 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bhavye's Portfolio Preview 😂</title>
-<style>
-  body {
-
-<!-- Background Music -->
-<audio id="bg-music" autoplay loop>
-  <source src="https://files.catbox.moe/ac2jbo.mp3" type="audio/mp3">
-</audio>
-
-<!-- Music Toggle Button -->
-<button onclick="toggleMusic()" id="music-btn" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  z-index: 9999;
-  font-size: 16px;
-  cursor: pointer;">
-  🔊 Music On
-</button>
-    
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 20px;
-    line-height: 1.6;
-    transition: background-color 0.5s ease;
-  }
-  header {
-    text-align: center;
-  }
-  h1 {
-    font-size: 2.5rem;
-    animation: popin 1s ease-in-out;
-  }
-  @keyframes popin {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-  .typing {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid orange;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-  .meme-mode-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff5e5e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  .meme-mode-btn:hover {
-    transform: scale(1.1);
-  }
-  .section {
-    margin-top: 30px;
-    animation: fadein 1s ease-in;
-  }
-  @keyframes fadein {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .meme {
-    display: none;
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  .tooltip {
-    display: inline-block;
-    position: relative;
-  }
-  .tooltip:hover::after {
-    content: 'Certified Code Monkey 🐵';
-    position: absolute;
-    left: 100%;
-    top: 0;
-    white-space: nowrap;
-    padding: 5px;
-    background: black;
-    color: white;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
-  .joke-link {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #0077cc;
-    cursor: pointer;
-  }
-  .joke-link:hover {
-    color: #0055aa;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bhavye's Portfolio Preview 😂</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+      transition: background-color 0.5s ease;
+    }
+    header {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      animation: popin 1s ease-in-out;
+    }
+    @keyframes popin {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .typing {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid orange;
+      animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+    .meme-mode-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff5e5e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .meme-mode-btn:hover {
+      transform: scale(1.1);
+    }
+    .section {
+      margin-top: 30px;
+      animation: fadein 1s ease-in;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .meme {
+      display: none;
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .tooltip {
+      display: inline-block;
+      position: relative;
+    }
+    .tooltip:hover::after {
+      content: 'Certified Code Monkey 🐵';
+      position: absolute;
+      left: 100%;
+      top: 0;
+      white-space: nowrap;
+      padding: 5px;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    .joke-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: #0077cc;
+      cursor: pointer;
+    }
+    .joke-link:hover {
+      color: #0055aa;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1 class="typing">Hello World! I'm <span class="tooltip">Bhavye</span> 👋</h1>
-  <button class="meme-mode-btn" onclick="toggleMemeMode()">Toggle Meme Mode 😂</button>
-</header>
+  <header>
+    <h1 class="typing">Hello World! I'm <span class="tooltip">Bhavye</span> 👋</h1>
+    <button class="meme-mode-btn" onclick="toggleMemeMode()">Toggle Meme Mode 😂</button>
+  </header>
 
-<section class="section">
-  <h2>About Me</h2>
-  <p>I used to be a normal student until I got bitten by a radioactive bug... just kidding. But I do love to code and break stuff (intentionally). Here's me when I finally fix a bug after 4 hours:</p>
-  <img src="https://i.postimg.cc/LXyqBCGs/intro-1640118396.jpg" alt="debugging meme" class="meme meme-about" />
-</section>
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I used to be a normal student until I got bitten by a radioactive bug... just kidding. But I do love to code and break stuff (intentionally). Here's me when I finally fix a bug after 4 hours:</p>
+    <img src="https://i.postimg.cc/LXyqBCGs/intro-1640118396.jpg" alt="debugging meme" class="meme meme-about" />
+  </section>
 
-<section class="section">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Calculator Web App</strong> – Because sometimes we pretend not to know 9 x 9.</li>
-    <li><strong>To-Do List</strong> – Where I list all my tasks and then ignore them. Productivity ftw.</li>
-    <li><strong>Personal Website</strong> – You're looking at it! 😎</li>
-  </ul>
-  <img src="https://i.postimg.cc/vmC8YRRf/images-5.jpg" alt="project meme" class="meme meme-projects" />
-</section>
+  <section class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Calculator Web App</strong> – Because sometimes we pretend not to know 9 x 9.</li>
+      <li><strong>To-Do List</strong> – Where I list all my tasks and then ignore them. Productivity ftw.</li>
+      <li><strong>Personal Website</strong> – You're looking at it! 😎</li>
+    </ul>
+    <img src="https://i.postimg.cc/vmC8YRRf/images-5.jpg" alt="project meme" class="meme meme-projects" />
+  </section>
 
-<section class="section">
-  <h2>Skills</h2>
-  <p>HTML, CSS, JavaScript, Meme Engineering, Bug Summoning</p>
-</section>
+  <section class="section">
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, Meme Engineering, Bug Summoning</p>
+  </section>
 
-<section class="section">
-  <h2>Hobbies</h2>
-  <ul>
-    <li>Debugging other people's code (and sometimes breaking it more)</li>
-    <li>Watching tech YouTube videos and pretending I'm learning</li>
-    <li>Scrolling memes for "research purposes"</li>
-    <li>Sleeping while my code compiles</li>
-  </ul>
-</section>
+  <section class="section">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Debugging other people's code (and sometimes breaking it more)</li>
+      <li>Watching tech YouTube videos and pretending I'm learning</li>
+      <li>Scrolling memes for "research purposes"</li>
+      <li>Sleeping while my code compiles</li>
+    </ul>
+  </section>
 
-<section class="section">
-  <h2>Bonus Info</h2>
-  <p><strong>Mother's Name:</strong> Who wants to know? 😅</p>
-  <p><strong>Father's Name:</strong> Seriously? You’re here for <em>me</em>, not my family tree 😂</p>
-</section>
+  <section class="section">
+    <h2>Bonus Info</h2>
+    <p><strong>Mother's Name:</strong> Who wants to know? 😅</p>
+    <p><strong>Father's Name:</strong> Seriously? You’re here for <em>me</em>, not my family tree 😂</p>
+  </section>
 
-<section class="section">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:sainibhavye3@gmail.com">sainibhavye3@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/Bhavye-saini" target="_blank">github.com/Bhavye-saini</a></p>
-</section>
+  <section class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sainibhavye3@gmail.com">sainibhavye3@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Bhavye-saini" target="_blank">github.com/Bhavye-saini</a></p>
+  </section>
 
-<a class="joke-link" onclick="showJokes()">Click here if you're lost like a 404 🦯</a>
+  <a class="joke-link" onclick="showJokes()">Click here if you're lost like a 404 🦯</a>
 
-<section class="section" id="joke-section" style="display:none;">
-  <h2>Lost? Enjoy these random developer jokes 😂</h2>
-  <p style="font-style: italic; color: grey;">Wow... you clicked this? You clearly have too much time 😅</p>
-  <ul>
-    <li>404: Brain Not Found – please reboot with coffee ☕</li>
-    <li>Why do Java developers wear glasses? Because they don’t C# 🤓</li>
-    <li>I told my computer I needed a break... now it won’t stop sending me KitKat ads 🍫</li>
-    <li>There are 10 types of people in the world: those who understand binary and those who don’t.</li>
-    <li>Why do programmers prefer dark mode? Because light attracts bugs 🐛</li>
-  </ul>
-</section>
-<script>
-  let memeMode = false;
-  let isPlaying = true;
-  const music = document.getElementById('bg-music');
+  <section class="section" id="joke-section" style="display:none;">
+    <h2>Lost? Enjoy these random developer jokes 😂</h2>
+    <p style="font-style: italic; color: grey;">Wow... you clicked this? You clearly have too much time 😅</p>
+    <ul>
+      <li>404: Brain Not Found – please reboot with coffee ☕</li>
+      <li>Why do Java developers wear glasses? Because they don’t C# 🤓</li>
+      <li>I told my computer I needed a break... now it won’t stop sending me KitKat ads 🍫</li>
+      <li>There are 10 types of people in the world: those who understand binary and those who don’t.</li>
+      <li>Why do programmers prefer dark mode? Because light attracts bugs 🐛</li>
+    </ul>
+  </section>
 
-  music.volume = 0.2;
-  music.addEventListener('canplaythrough', () => {
-    music.play().catch(e => console.log("Auto-play blocked:", e));
-  });
+  <!-- 🎵 Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="https://files.catbox.moe/ac2jbo.mp3" type="audio/mp3">
+  </audio>
 
-  function toggleMemeMode() {
-    memeMode = !memeMode;
-    const memes = document.querySelectorAll('.meme');
-    memes.forEach(meme => {
-      meme.style.display = memeMode ? 'block' : 'none';
+  <!-- 🔊 Music Toggle Button -->
+  <button onclick="toggleMusic()" id="music-btn" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    z-index: 9999;
+    font-size: 16px;
+    cursor: pointer;">
+    🔊 Music On
+  </button>
+
+  <!-- 💻 Script Section -->
+  <script>
+    let memeMode = false;
+    let isPlaying = true;
+    const music = document.getElementById('bg-music');
+
+    music.volume = 0.2;
+    music.addEventListener('canplaythrough', () => {
+      music.play().catch(e => console.log("Auto-play blocked:", e));
     });
-    document.body.style.backgroundColor = memeMode ? '#fff8dc' : '#f0f0f0';
-    alert(memeMode ? "Meme mode activated! Proceed with caution 😂" : "Back to boring mode... 🛌");
-  }
 
-  function showJokes() {
-    const jokeSection = document.getElementById('joke-section');
-    if (jokeSection.style.display !== 'block') {
-      jokeSection.style.display = 'block';
-      jokeSection.scrollIntoView({behavior: 'smooth'});
+    function toggleMemeMode() {
+      memeMode = !memeMode;
+      const memes = document.querySelectorAll('.meme');
+      memes.forEach(meme => {
+        meme.style.display = memeMode ? 'block' : 'none';
+      });
+      document.body.style.backgroundColor = memeMode ? '#fff8dc' : '#f0f0f0';
+      alert(memeMode ? "Meme mode activated! Proceed with caution 😂" : "Back to boring mode... 🛌");
     }
-  }
 
-  function toggleMusic() {
-    const btn = document.getElementById('music-btn');
-    if (isPlaying) {
-      music.pause();
-      btn.textContent = '🔇 Music Off';
-    } else {
-      music.play();
-      btn.textContent = '🔊 Music On';
+    function showJokes() {
+      const jokeSection = document.getElementById('joke-section');
+      if (jokeSection.style.display !== 'block') {
+        jokeSection.style.display = 'block';
+        jokeSection.scrollIntoView({behavior: 'smooth'});
+      }
     }
-    isPlaying = !isPlaying;
-  }
-</script>
+
+    function toggleMusic() {
+      const btn = document.getElementById('music-btn');
+      if (isPlaying) {
+        music.pause();
+        btn.textContent = '🔇 Music Off';
+      } else {
+        music.play();
+        btn.textContent = '🔊 Music On';
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
 </body>
 </html>
-
