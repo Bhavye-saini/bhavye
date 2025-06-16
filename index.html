@@ -21,14 +21,8 @@
     animation: popin 1s ease-in-out;
   }
   @keyframes popin {
-    from {
-      transform: scale(0.8);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
   }
   .typing {
     overflow: hidden;
@@ -120,9 +114,7 @@
     <li><strong>To-Do List</strong> – Where I list all my tasks and then ignore them. Productivity ftw.</li>
     <li><strong>Personal Website</strong> – You're looking at it! 😎</li>
   </ul>
-<img src="https://i.postimg.cc/vmC8YRRf/images-5.jpg" 
-     alt="meme" 
-     class="meme meme-projects" />
+  <img src="https://i.postimg.cc/vmC8YRRf/images-5.jpg" alt="project meme" class="meme meme-projects" />
 </section>
 
 <section class="section">
@@ -148,8 +140,8 @@
 
 <section class="section">
   <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:bhavye@codeverse.com">bhavye@codeverse.com</a></p>
-  <p>GitHub: <a href="https://github.com/bhavye" target="_blank">github.com/bhavye</a></p>
+  <p>Email: <a href="mailto:sainibhavye3@gmail.com">sainibhavye3@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/Bhavye-saini" target="_blank">github.com/Bhavye-saini</a></p>
 </section>
 
 <a class="joke-link" onclick="showJokes()">Click here if you're lost like a 404 🦯</a>
@@ -164,12 +156,26 @@
     <li>There are 10 types of people in the world: those who understand binary and those who don’t.</li>
     <li>Why do programmers prefer dark mode? Because light attracts bugs 🐛</li>
   </ul>
+</section>
 
 <!-- Background Music -->
 <audio id="bg-music" autoplay loop>
-  <source src="https://drive.google.com/file/d/1EG7UIDY-ghJygBSLo0-5oHhOY1fFS46I/view?usp=sharing" type="audio/mp3">
- </audio>
-<button onclick="toggleMusic()" style="position:fixed;bottom:20px;right:20px;padding:10px;background:#333;color:#fff;border:none;border-radius:5px;z-index:999;">
+  <source src="https://files.catbox.moe/ac2jbo.mp3" type="audio/mp3">
+</audio>
+
+<!-- Music Toggle Button -->
+<button onclick="toggleMusic()" id="music-btn" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  z-index: 9999;
+  font-size: 16px;
+  cursor: pointer;">
   🔊 Music On
 </button>
 
@@ -177,6 +183,7 @@
   let memeMode = false;
   let isPlaying = true;
   const music = document.getElementById('bg-music');
+
   music.volume = 0.2;
   music.addEventListener('canplaythrough', () => {
     music.play().catch(e => console.log("Auto-play blocked:", e));
@@ -201,7 +208,7 @@
   }
 
   function toggleMusic() {
-    const btn = event.target;
+    const btn = document.getElementById('music-btn');
     if (isPlaying) {
       music.pause();
       btn.textContent = '🔇 Music Off';
